@@ -1,0 +1,131 @@
+.background {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.yellowBubble {
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  width: 89.4rem;
+  max-width: 85vh;
+}
+
+.yellowBubble svg {
+  width: 100%;
+  height: 100%;
+}
+
+.yellowBubble button {
+  background-color: #f7d832;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  color: #333333;
+  position: fixed;
+  top: 4vw;
+  right: 5.4vw;
+  height: 5rem;
+  width: 20rem;
+  max-width: 250px;
+  max-height: 55px;
+  font-size: 1.8rem;
+}
+
+.bubble {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 25.5rem;
+  max-width: 10vw;
+}
+
+.bubble svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bubble h1 {
+  color: #F7D832;
+  font-size: 4.8rem;
+  font-weight: 700;
+  position: fixed;
+  top: 7rem;
+  left: 10rem;
+}
+
+.bottomBubble {
+  position: fixed;
+  bottom: 0;
+  left: 21vw;
+  width: 51.2rem;
+  max-width: 27vw;
+}
+
+.bottomBubble svg {
+  width: 100%;
+  height: 100%;
+}
+
+.illustration {
+  position: relative;
+  top: -35vw;
+  height: 29vw;
+}
+
+.footer {
+  position: fixed;
+  bottom: 6.5rem;
+  left: 10rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+
+.footer div:first-of-type {
+  margin-right: 6.7rem;
+}
+
+@media (max-height: 950px) {
+  .bubble h1 {
+    top: 2rem;
+  }
+
+  .footer {
+    bottom: 4rem;
+  }
+
+  .bottomBubble {
+    max-width: 255px;
+    left: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bubble {
+    max-width: 200px;
+  }
+
+  .yellowBubble {
+    display: none;
+  }
+
+  .yellowBubble svg {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .bottomBubble {
+    display: none;
+  }
+
+  .footer {
+    width: 100vw;
+    left: 0;
+    bottom: 20px;
+  }
+}

@@ -1,0 +1,165 @@
+.form {
+  color: #a5a5a5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 17rem;
+  left: 10rem;
+  max-width: 540px;
+  max-height: 750px;
+}
+
+.form h2 {
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 7rem;
+}
+
+.fourCols {
+  width: 100%;
+  min-width: 540px;
+}
+
+.threeCols {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 75%;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.row label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.inputContainer {
+  width: 100%;
+  height: 5rem;
+}
+
+.row input {
+  width: 100%;
+  background-color: #f0f0f0;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  height: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  padding-left: 8.8%;
+  padding-right: 8.8%;
+}
+
+.row button {
+  background-color: transparent;
+  border: 0;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.row button:hover {
+  cursor: pointer;
+}
+
+.threeCols button {
+  background-color: #f7d832;
+  border-radius: 5px;
+  width: 100%;
+  height: 5rem;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  padding: auto;
+}
+
+.threeCols button:hover {
+  cursor: initial;
+}
+
+.signup {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  margin-top: 3.5rem;
+}
+
+.signup button {
+  background-color: transparent;
+  border: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+}
+
+.signup button:hover {
+  cursor: pointer;
+}
+
+@media (max-height: 950px) {
+  .form {
+    max-height: 400px;
+    top: 12rem;
+  }
+
+  .form h2 {
+    margin-bottom: 4rem;
+  }
+
+  .signup {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .form {
+    width: 100vw;
+    left: 0;
+  }
+
+  .form h2 {
+    align-self: center;
+  }
+
+  .fourCols {
+    min-width: 300px;
+  }
+
+  .threeCols {
+    width: 75%;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row button {
+    margin-top: 15px;
+  }
+
+  .threeCols button {
+    margin-left: 0;
+  }
+
+  .signup {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+  }
+}
